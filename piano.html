@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>mac_piano</title>
+    <link rel="stylesheet" href="piano.css">
+    
+    <audio src="piano_audio/hakken_audio/c4h_mp.mp3" id="do_audio"></audio>
+    <audio src="piano_audio/hakken_audio/d4h_mp.mp3" id="re_audio"></audio>
+    <audio src="piano_audio/hakken_audio/e4h_mp.mp3" id="mi_audio"></audio>
+    <audio src="piano_audio/hakken_audio/f4h_mp.mp3" id="fa_audio"></audio>
+    <audio src="piano_audio/hakken_audio/g4h_mp.mp3" id="so_audio"></audio>
+    <audio src="piano_audio/hakken_audio/a4h_mp.mp3" id="ra_audio"></audio>
+    <audio src="piano_audio/hakken_audio/b4h_mp.mp3" id="si_audio"></audio>
+    <audio src="piano_audio/hakken_audio/c5h_mp.mp3" id="do2_audio"></audio>
+
+    <audio src="piano_audio/kokken_audio/d4k_mp.mp3" id="Db_audio"></audio>
+    <audio src="piano_audio/kokken_audio/e4k_mp.mp3" id="Eb_audio"></audio>
+    <audio src="piano_audio/kokken_audio/g4k_mp.mp3" id="Gb_audio"></audio>
+    <audio src="piano_audio/kokken_audio/a4k_mp.mp3" id="Ab_audio"></audio>
+    <audio src="piano_audio/kokken_audio/b4k_mp.mp3" id="Bb_audio"></audio>
+</head>
+
+<body>
+    <div id="header"><h1>mac_piano</h1></div>
+    <div id="space"></div>
+    <canvas id="can"></canvas>
+    <div id="setumei">
+    ・このサイトはMacBookでピアノを弾くためのサイトです<br>
+    ・Zキーから＜キーで白健、Sキ-からJキーで黒鍵が弾けます
+</div>
+<div id="yohaku"></div>
+
+<div onclick="hakka()">操作対応キー↓</div>
+    <img id="thn" src="piano_makken.png" alt="※※※画像が表示できません※※※"
+            height="200">
+
+    <script src="piano.js"></script>
+</body>
+</html>
